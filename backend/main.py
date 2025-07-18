@@ -17,7 +17,10 @@ load_dotenv()
 
 # --- Initialize Flask App ---
 app = Flask(__name__)
-CORS(app) 
+CORS(app, resources={r"/api/*": {"origins": [
+    "http://localhost:5173",  # For development
+    "https://learning-assistant-ianu.onrender.com" # Your production frontend
+]}})
 
 # --- Initialize LLM and Tools ---
 llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash-latest", temperature=0)
