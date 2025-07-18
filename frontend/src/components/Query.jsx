@@ -50,7 +50,7 @@ const Query = ({ setResearchResult, setIsLoading, isLoading, setError, error }) 
     if (form.fromResearchPapers) formData.append('sources', 'fromResearchPapers');
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}api/research`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/research`, {
       method: 'POST',
       body: formData,
     });
