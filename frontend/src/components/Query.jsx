@@ -50,10 +50,11 @@ const Query = ({ setResearchResult, setIsLoading, isLoading, setError, error }) 
     if (form.fromResearchPapers) formData.append('sources', 'fromResearchPapers');
 
     try {
-      const response = await fetch('http://127.0.0.1:5000/api/research', {
-        method: 'POST',
-        body: formData,
-      });
+      const response = await fetch(`${import.meta.env.VITE_API_URL}api/research`, {
+      method: 'POST',
+      body: formData,
+    });
+
 
       if (!response.ok) {
         const errorData = await response.json().catch(() => ({}));
