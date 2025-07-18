@@ -9,3 +9,5 @@ langchain
 langgraph
 langchain-google-genai 
 tavily-python 
+gunicorn
+uvicorn
