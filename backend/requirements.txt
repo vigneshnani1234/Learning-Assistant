@@ -8,6 +8,8 @@ arxiv
 langchain
 langgraph
 langchain-google-genai 
+langchain_tavily
+langchain_openai
 tavily-python 
 gunicorn
 uvicorn
