@@ -1,0 +1,11 @@
+Flask
+Flask-Cors
+python-dotenv
+PyMuPDF
+youtube-transcript-api
+google-search-results
+arxiv
+langchain
+langgraph
+langchain-google-genai 
+tavily-python 
